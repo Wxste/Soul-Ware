@@ -1,1 +1,23 @@
-Coming soon!
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Soul Ware";
+Text = "Welcome!";
+Icon = "rbxassetid://7249251729",
+Duration = 4,
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Soul Ware";
+Text = "Checking Whitelist...";
+Icon = "rbxassetid://7249251729",
+Duration = 6,
+})
+local Player = game:GetService("Players").LocalPlayer
+local WhitelistedIds = {
+    3299672636, -- alt acc
+}
+
+if table.find(WhitelistedIds, Player.UserId) then
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/Wxste/Roblox-The-Streets-Scripts/main/Soul%20Ware%20Test")()
+else
+    Player:Kick("You are not whitelisted ")
+end
